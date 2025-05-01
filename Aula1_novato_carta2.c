@@ -2,13 +2,13 @@
 
 int main(){
 
-//estado: A
-//Código A01
-//Nome da Cidade: São Paulo
-//População: 12325000
-//Área: 1521.11km
-//PIB: 699.28 Bilhões de reais
-//Número de pontos turísticos: 50
+    //Estado: B
+    //Código: B02
+    //Nome da Cidade: Rio de Janeiro
+    //População: 6748000
+    //Área: 1200.25 km
+    //PIB: 30050 Bilhões de reais
+    //Número de pontos turísticos: 30
 
     char estado;
     char carta[20];
