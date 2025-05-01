@@ -2,13 +2,15 @@
 
 int main(){
 
-//estado: A
+//Estado: A
 //Código A01
 //Nome da Cidade: São Paulo
 //População: 12325000
 //Área: 1521.11km
 //PIB: 699.28 Bilhões de reais
 //Número de pontos turísticos: 50
+//Densidade Populacional: 81.03hab/km
+//PIB per capita: 56736.71 reais
 
     char estado;
     char carta[20];
@@ -17,13 +19,15 @@ int main(){
     float area;
     float pib;
     int pontosturisticos;
+    float densidade;
+    float pibpercapita;
 
 printf("Nome do Estado: ");
-scanf("%c", &estado);
+scanf(" %c", &estado);
 printf("O estado é: %c\n", estado);
 
 printf("Digite seu codigo: ");
-scanf("%s", &carta);
+scanf("%s", carta);
 printf("O codigo é: %s\n", carta);
 
 printf("Digite sua cidade: ");
@@ -34,18 +38,26 @@ printf("Digite sua populacao: ");
 scanf("%d", &populacao);
 printf("A populacao é: %d\n", populacao);
 
-printf("Digite sua area: ");
+printf("Digite área da cidade: ");
 scanf("%f", &area);
-printf("Area por KM: %2.f\n", area);
+printf("Area por KM: %f\n", area);
 
 printf("Digite seu pib: ");
 scanf("%f", &pib);
-printf("O pib é: %2.f\n", pib);
+printf("O pib em bilhões é: %f\n", pib);
 
-printf("Digite pontos turisticos: ");
+printf("Numero de pontos turisticos: ");
 scanf("%d", &pontosturisticos);
 printf("Pontos turisticos são: %d\n", pontosturisticos);
 
+//CalculodaDensidade
+densidade = populacao / area;
+printf("A densidade populacional é: %.2f\n", densidade);
+
+//CalculoPIBperCapita
+pib = 699.28 * 1000000000;
+pibpercapita  = pib / populacao;
+printf("O PIB per capita é: %.2f\n", pibpercapita);
 
 
 
