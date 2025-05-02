@@ -10,7 +10,7 @@ int main(){
     //Número de pontos turísticos: 30
     //Densidade populacional: 5.62 hab/km
     //PIB per Capita: 445317.12
-
+    //SuperPoder: 601001230336.00
     char estado;
     char carta[20];
     char cidade[30];
@@ -20,6 +20,7 @@ int main(){
     int pontosturisticos;
     float densidade;
     float pibpercapita;
+    float superpoder;
 
 printf("Nome do Estado: ");
 scanf(" %c", &estado);
@@ -58,7 +59,9 @@ pib = 300.50 * 1000000000;
 pibpercapita  = pib / populacao;
 printf("O PIB per capita é: %.2f\n", pibpercapita);
 
-
+//CalculandoSuperPoder
+superpoder = (float)populacao + area + pib + (float)pontosturisticos + pib + pibpercapita + (1 / densidade);
+printf("O super poder é: %.2f\n", superpoder);
 
 
 
